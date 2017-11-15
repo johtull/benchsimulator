@@ -23,7 +23,7 @@ public class HighScore implements Runnable {
         //connect to server
         try {
             if(server.equals("default")) {
-                socket = new Socket("24.14.61.104", 10009);
+                socket = new Socket("127.0.0.1", 10009);
             }else {
                 String IP = server.substring(server.indexOf(server.charAt(0)), server.indexOf(':'));
                 int port = Integer.parseInt(server.substring(server.indexOf(':') + 1));
